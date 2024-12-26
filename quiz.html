@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/quiz.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav"></div>
+    </header>
+    <main>
+      <div>
+        <form action="" id="quizForm">
+          <label for="question">Question :</label>
+          <input id="question" type="text" placeholder="Question here" />
+          <!-- <label for="option">Option A</label> -->
+
+          <input id="optionA" type="text" />
+          <!-- <label for="option">Option B</label> -->
+
+          <input id="optionB" type="text" />
+          <!-- <label for="options">Option C</label> -->
+
+          <input id="optionC" type="text" />
+          <!-- <label for="options">Option D</label> -->
+
+          <input id="optionD" type="text" />
+
+          <!-- <label for="correctOption"> </label> -->
+          <select name="" id="correctOption">
+            <option value="">Correct Answer</option>
+            <option value="a">Option A</option>
+            <option value="b">Option B</option>
+            <option value="c">Option C</option>
+            <option value="d">Option D</option>
+          </select>
+          <input type="submit" value="Post Question" />
+        </form>
+      </div>
+      <button id="loadBtn">Load Questions</button>
+      <div id="quesCont"></div>
+    </main>
+  </body>
+  <script src="./scripts/navbar.js"></script>
+  <script src="./scripts/quiz.js" type="module"></script>
+</html>
